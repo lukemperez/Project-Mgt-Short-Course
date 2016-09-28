@@ -6,7 +6,7 @@
 
 %\date{28 March 2010} % without \date command, current date is supplied
 
-%\geometry{showframe} % display margins for debugging page layout
+% \geometry{showframe} % display margins for debugging page layout
 
 \usepackage{graphicx} % allow embedded images
   \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
@@ -29,14 +29,25 @@
 \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
 \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
 
+% Bibliography 
+% \usepackage[english]{babel}
+% \usepackage[authordate,bibencoding=auto,strict,backend=bibtex,natbib]{biblatex}
+% \addbibresource{Proj_MGT.bib}
+
+
 \begin{document}
+
+
 
 \maketitle% this prints the handout title, author, and date
 
-\begin{abstract}
-\noindent
-Project management is fundamentally about managing the anxiety produced by ``open loops'' and unfinished tasks. This handout surveys a few strategies which help close the open loops and increase productivity. Your mileage may vary.
-\end{abstract}
+% \begin{abstract}
+% \noindent
+% Project management is fundamentally about managing the anxiety
+% produced by ``open loops'' and unfinished tasks. This handout surveys
+% a few strategies which help close the open loops and increase
+% productivity. Your mileage may vary.
+% \end{abstract}
 
 %\printclassoptions
 
@@ -45,259 +56,187 @@ Project management is fundamentally about managing the anxiety produced by ``ope
 
 \subsection{Close the loops}\marginnote{David Allen \textit{Getting Things Done}} % (fold)
 \label{sub:close_the_loops}
-Managing projects is, at its core, fundamentally about managing the anxiety produced by the nagging question in your head ``Oh, don't forget to do [x].'' As it turns out, human nature is surprisingly inefficient when it comes to remembering tasks, ``to-do'' lists, and priorities. 
+Managing projects is, at its core, fundamentally about managing the
+anxiety produced by the nagging question in your head ``Oh, don't
+forget to do [x].'' As it turns out, human nature is surprisingly
+inefficient when it comes to remembering tasks, ``to-do'' lists, and
+priorities.
 % subsection close_the_loops (end)
 
 \subsection{Apps don't matter} % (fold)
 \label{sub:apps_don_t_matter}
 
-You can waste a lot of hours jumping from application to application, pursuing task-management utopia. But remember that at the end of the day, what application you use does not matter. Find the ones that work for you, learn the hell of it.\marginnote{Kieran Healy, \textit{Plain Text Guide}} Grasping a few basic concepts for \textit{process} will serve you much better. Let the tasks determine the tools, not the other way around.
+You can waste a lot of hours jumping from application to application,
+pursuing task-management utopia. But remember that at the end of the
+day, what application you use does not matter. Find the ones that work
+for you, learn the hell of it.\marginnote{Kieran Healy, \textit{Plain
+    Text Guide}} Grasping a few basic concepts for \textit{process}
+will serve you much better. Let the tasks determine the tools, not the
+other way around.
 % subsection apps_don_t_matter (end)
-
-\section{Process} % (fold)
-\label{sec:process}
-
-% section process (end)
-
 % section introduction (end)
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \section{Page Layout}\label{sec:page-layout}
-% \subsection{Headings}\label{sec:headings}
-% This style provides \textsc{a}- and \textsc{b}-heads (that is,
-% \Verb|\section| and \Verb|\subsection|), demonstrated above.
+\section{Backward Planning} % (fold)
+\label{sec:backward_planning}
 
-% The Tufte-\LaTeX\ classes will emit an error if you try to use
-% \linebreak\Verb|\subsubsection| and smaller headings.
+The approach that most graduate students think about projects is
+progressively linear. From the moment we get an idea or decide to
+write a paper, the process usually looks something like the following.
 
-% % let's start a new thought -- a new section
-% \newthought{In his later books},\cite{Tufte2006} Tufte
-% starts each section with a bit of vertical space, a non-indented paragraph,
-% and sets the first few words of the sentence in \textsc{small caps}.  To
-% accomplish this using this style, use the \Verb|\newthought| command:  
-% \begin{docspec}
-%   \doccmd{newthought\{In his later books\}, Tufte starts\ldots}
-% \end{docspec}
+\[ data~ crunch \rightarrow read~ for~ a~ theory \rightarrow recrunch~
+  data \rightarrow repeat~ until~ deadline \]
+% \[ Idea \righarrow Read \rightarrow Find data? \rightarrow read more \rightarrow cram for the deadline \]
 
-% \subsection{Sidenotes}\label{sec:sidenotes}
-% One of the most prominent and distinctive features of this style is the
-% extensive use of sidenotes.  There is a wide margin to provide ample room
-% for sidenotes and small figures.  Any \Verb|\footnote|s will automatically
-% be converted to sidenotes.\footnote{This is a sidenote that was entered
-% using the \texttt{\textbackslash footnote} command.}  If you'd like to place ancillary
-% information in the margin without the sidenote mark (the superscript
-% number), you can use the \Verb|\marginnote| command.\marginnote{This is a
-% margin note.  Notice that there isn't a number preceding the note, and
-% there is no number in the main text where this note was written.}
+This process is \textit{literally} backwards. Although somewhat of a
+caricature of the writing process, some version of this is where most
+of us find ourselves most of the time. Parkinson's Law captures the
+phenomenon but not the reason why this happens on an individual
+level. Open loops cause us to constantly revise, re-read, refine
+because we're unsure when the project is 'done'.\marginnote{Pro-Tip:
+  it is always a good idea to set your deadline a week before the hard
+deadline.} Better is to begin
+with the hard deadline and work in reverse-chronological order to
+determine all the dependencies which must be accomplished, the time
+estimated for each dependency, and the order they must be
+finished. The process looks like this:
 
-% The specification of the \Verb|\sidenote| command is:
-% \begin{docspec}
-%   \doccmd{sidenote[\docopt{number}][\docopt{offset}]\{\docarg{Sidenote text.}\}}
-% \end{docspec}
+\[Read \leftarrow Data~ Crunch \leftarrow Write \leftarrow Proof  \leftarrow Revisions \leftarrow Deadline  \]
 
-% Both the \docopt{number} and \docopt{offset} arguments are optional.  If you
-% provide a \docopt{number} argument, then that number will be used as the
-% sidenote number.  It will change of the number of the current sidenote only and
-% will not affect the numbering sequence of subsequent sidenotes.
+\noindent For example, if you need a week to proof read something, then
+you need to be finished at least one week before you deadline. And if
+you write the introduction and conclusions last and those take a few
+days, then you need to finish the data-analysis or major portions at
+least a week before that. And so forth...\marginnote{Although a bit of
+  overkill for graduate students, a Gantt chart captures this concept
+  quite well.}
+% section backward_planning (end)
 
-% Sometimes a sidenote may run over the top of other text or graphics in the
-% margin space.  If this happens, you can adjust the vertical position of the
-% sidenote by providing a dimension in the \docopt{offset} argument.  Some
-% examples of valid dimensions are:
-% \begin{docspec}
-%   \ttfamily 1.0in \qquad 2.54cm \qquad 254mm \qquad 6\Verb|\baselineskip|
-% \end{docspec}
-% If the dimension is positive it will push the sidenote down the page; if the
-% dimension is negative, it will move the sidenote up the page.
+\section{In the weeds}
+\label{in-weeds}
 
-% While both the \docopt{number} and \docopt{offset} arguments are optional, they
-% must be provided in order.  To adjust the vertical position of the sidenote
-% while leaving the sidenote number alone, use the following syntax:
-% \begin{docspec}
-%   \doccmd{sidenote[][\docopt{offset}]\{\docarg{Sidenote text.}\}}
-% \end{docspec}
-% The empty brackets tell the \Verb|\sidenote| command to use the default
-% sidenote number.
+\subsection{A GTD Crash Course}
+\label{gtd-crash-course}
 
-% If you \emph{only} want to change the sidenote number, however, you may
-% completely omit the \docopt{offset} argument:
-% \begin{docspec}
-%   \doccmd{sidenote[\docopt{number}]\{\docarg{Sidenote text.}\}}
-% \end{docspec}
+\paragraph{Projects vs Tasks}
+\label{sec:proj-tasks}
 
-% The \Verb|\marginnote| command has a similar \docarg{offset} argument:
-% \begin{docspec}
-%   \doccmd{marginnote[\docopt{offset}]\{\docarg{Margin note text.}\}}
-% \end{docspec}
+\begin{enumerate}
+\item[] A task is any single action.
+\item[] A project is anything that requires two or more actions
+\end{enumerate}
 
-% \subsection{References}
-% References are placed alongside their citations as sidenotes,
-% as well.  This can be accomplished using the normal \Verb|\cite|
-% command.\sidenote{The first paragraph of this document includes a citation.}
+\paragraph{A simple example}
 
-% The complete list of references may also be printed automatically by using
-% the \Verb|\bibliography| command.  (See the end of this document for an
-% example.)  If you do not want to print a bibliography at the end of your
-% document, use the \Verb|\nobibliography| command in its place.  
-
-% To enter multiple citations at one location,\cite{Tufte2006,Tufte1990} you can
-% provide a list of keys separated by commas and the same optional vertical
-% offset argument: \Verb|\cite{Tufte2006,Tufte1990}|.  
-% \begin{docspec}
-%   \doccmd{cite[\docopt{offset}]\{\docarg{bibkey1,bibkey2,\ldots}\}}
-% \end{docspec}
-
-% \section{Figures and Tables}\label{sec:figures-and-tables}
-% Images and graphics play an integral role in Tufte's work.
-% In addition to the standard \docenv{figure} and \docenv{tabular} environments,
-% this style provides special figure and table environments for full-width
-% floats.
-
-% Full page--width figures and tables may be placed in \docenv{figure*} or
-% \docenv{table*} environments.  To place figures or tables in the margin,
-% use the \docenv{marginfigure} or \docenv{margintable} environments as follows
-% (see figure~\ref{fig:marginfig}):
-
-% \begin{marginfigure}%
-%   \includegraphics[width=\linewidth]{helix}
-%   \caption{This is a margin figure.  The helix is defined by 
-%     $x = \cos(2\pi z)$, $y = \sin(2\pi z)$, and $z = [0, 2.7]$.  The figure was
-%     drawn using Asymptote (\url{http://asymptote.sf.net/}).}
-%   \label{fig:marginfig}
-% \end{marginfigure}
-% \begin{Verbatim}
-% \begin{marginfigure}
-%   \includegraphics{helix}
-%   \caption{This is a margin figure.}
-% \end{marginfigure}
-% \end{Verbatim}
-
-% The \docenv{marginfigure} and \docenv{margintable} environments accept an optional parameter \docopt{offset} that adjusts the vertical position of the figure or table.  See the ``\nameref{sec:sidenotes}'' section above for examples.  The specifications are:
-% \begin{docspec}
-%   \doccmd{begin\{marginfigure\}[\docopt{offset}]}\\
-%   \qquad\ldots\\
-%   \doccmd{end\{marginfigure\}}\\
-%   \mbox{}\\
-%   \doccmd{begin\{margintable\}[\docopt{offset}]}\\
-%   \qquad\ldots\\
-%   \doccmd{end\{margintable\}}\\
-% \end{docspec}
-
-% Figure~\ref{fig:fullfig} is an example of the \Verb|figure*|
-% environment and figure~\ref{fig:textfig} is an example of the normal
-% \Verb|figure| environment.
-
-% \begin{figure*}[h]
-%   \includegraphics[width=\linewidth]{sine.pdf}%
-%   \caption{This graph shows $y = \sin x$ from about $x = [-10, 10]$.
-%   \emph{Notice that this figure takes up the full page width.}}%
-%   \label{fig:fullfig}%
-% \end{figure*}
-
-% \begin{figure}
-%   \includegraphics{hilbertcurves.pdf}
-% %  \checkparity This is an \pageparity\ page.%
-%   \caption{Hilbert curves of various degrees $n$.
-%   \emph{Notice that this figure only takes up the main textblock width.}}
-%   \label{fig:textfig}
-%   %\zsavepos{pos:textfig}
-%   \setfloatalignment{b}
-% \end{figure}
-
-% Table~\ref{tab:normaltab} shows table created with the \docpkg{booktabs}
-% package.  Notice the lack of vertical rules---they serve only to clutter
-% the table's data.
-
-% \begin{table}[ht]
-%   \centering
-%   \fontfamily{ppl}\selectfont
-%   \begin{tabular}{ll}
-%     \toprule
-%     Margin & Length \\
-%     \midrule
-%     Paper width & \unit[8\nicefrac{1}{2}]{inches} \\
-%     Paper height & \unit[11]{inches} \\
-%     Textblock width & \unit[6\nicefrac{1}{2}]{inches} \\
-%     Textblock/sidenote gutter & \unit[\nicefrac{3}{8}]{inches} \\
-%     Sidenote width & \unit[2]{inches} \\
-%     \bottomrule
-%   \end{tabular}
-%   \caption{Here are the dimensions of the various margins used in the Tufte-handout class.}
-%   \label{tab:normaltab}
-%   %\zsavepos{pos:normaltab}
-% \end{table}
-
-% \section{Full-width text blocks}
-
-% In addition to the new float types, there is a \docenv{fullwidth}
-% environment that stretches across the main text block and the sidenotes
-% area.
-
-% \begin{Verbatim}
-% \begin{fullwidth}
-% Lorem ipsum dolor sit amet...
-% \end{fullwidth}
-% \end{Verbatim}
-
-% \begin{fullwidth}
-% \small\itshape\lipsum[1]
-% \end{fullwidth}
-
-% \section{Typography}\label{sec:typography}
-
-% \subsection{Typefaces}\label{sec:typefaces}
-% If the Palatino, \textsf{Helvetica}, and \texttt{Bera Mono} typefaces are installed, this style
-% will use them automatically.  Otherwise, we'll fall back on the Computer Modern
-% typefaces.
-
-% \subsection{Letterspacing}\label{sec:letterspacing}
-% This document class includes two new commands and some improvements on
-% existing commands for letterspacing.
-
-% When setting strings of \allcaps{ALL CAPS} or \smallcaps{small caps}, the
-% letter\-spacing---that is, the spacing between the letters---should be
-% increased slightly.\cite{Bringhurst2005}  The \Verb|\allcaps| command has proper letterspacing for
-% strings of \allcaps{FULL CAPITAL LETTERS}, and the \Verb|\smallcaps| command
-% has letterspacing for \smallcaps{small capital letters}.  These commands
-% will also automatically convert the case of the text to upper- or
-% lowercase, respectively.
-
-% The \Verb|\textsc| command has also been redefined to include
-% letterspacing.  The case of the \Verb|\textsc| argument is left as is,
-% however.  This allows one to use both uppercase and lowercase letters:
-% \textsc{The Initial Letters Of The Words In This Sentence Are Capitalized.}
+Emailing your adviser to ask a question about the grading rubric for a
+TA class is a task because it is one action. Attending office hours
+for your adviser is a project because you have several dependencies
+that are involved: drafting a quick agenda of the two or three items
+you need. Emailing him or her the agenda in advance with any
+attachments they need so they can be prepared. Spending a few minutes
+before you arrive to review your agenda before walking to his or her
+office, etc., etc. 
 
 
+\subsection{Tasks vs Contexts}
+\label{tasks-contexts}
 
-% \section{Installation}\label{sec:installation}
-% To install the Tufte-\LaTeX\ classes, simply drop the
-% following files into the same directory as your \texttt{.tex}
-% file:
-% \begin{quote}
-%   \ttfamily
-%   tufte-book.cls\\
-%   tufte-common.def\\
-%   tufte-handout.cls\\
-%   tufte.bst
-% \end{quote}
+Every task you create for yourself belongs to both a project and a
+context.\sidenote{Sometimes, the project may just be a catch all for
+  all single action tasks.} A \textit{Context} is often described as
+the one physical thing or place that is mandatory before the task can
+be done. For instance, you need your laptop if you're going to write a
+section of your paper but you must be in the building if you're going to drop
+off documents to anyone in the front office.\marginnote{Pro-tip: Make
+  a context or just a list for every faculty or staff member you
+  interact with regularly. When you get two or three items, you have
+  an agenda to email them. It let's them know you value their time.} Simple enough. But you
+can extend this concept to non-physical things like the day and time
+of the week or your energy level. The reason for doing this is that
+you can maximize you're overall efficiency through the day.
+% subsection Tasks-Contexts (end)
 
-% % TODO add instructions for installing it globally
+\subsection{Daily and Weekly Review}
+\label{sec:review}
+
+Whatever system you use to manage your projects, it will not work if
+you do not trust it intuitively. The instant you're not sure if you've
+captured all your tasks and projects, you're mind will begin to
+``remind'' you---at which point, the anxiety of unfinished work and
+open loops will set in. The only way to prevent this is to review
+regularly. Spending a few minutes at the start and end of the work day
+to review will save you countless hours of time and anxiety. A longer
+weekly review helps you keep your eye on the medium- and
+long-term.\footnote{David Allen discusses this process in greater
+  detail.}
 
 
+% subsection Review (end)
+% section In the Weeds (end)
 
-% \section{More Documentation}\label{sec:more-doc}
-% For more documentation on the Tufte-\LaTeX{} document classes (including commands not
-% mentioned in this handout), please see the sample book.
+\section{Writing Projects and GTD}
+\label{sec:write-proj-gtd}
 
-% \section{Support}\label{sec:support}
+\subsection{Basic Principles}
+\label{basic-principles}
 
-% The website for the Tufte-\LaTeX\ packages is located at
-% \url{https://github.com/Tufte-LaTeX/tufte-latex}.  On our website, you'll find
-% links to our \smallcaps{svn} repository, mailing lists, bug tracker, and documentation.
+\begin{enumerate}
 
-% \bibliography{sample-handout}
-% \bibliographystyle{plainnat}
+  \item Embrace iteration
+  \item Write early, write often
+  \item Organize efficiently
+  \item Outsource your time-management
+
+  \end{enumerate}
+
+\paragraph{Embrace Iteration} No project goes from idea to publication
+in one move. Indeed, even your ideas will begin from previous work. So
+keep a journal and a pen on you at all times. Tinker, draft, trash,
+repeat. Review these ideas regularly and keep a file on your computer
+with a list of possible projects and ideas.\marginnote{Lots of people
+  prefer to keep a spreadsheet with \textsc{Title, Thesis, Abstract}
+  that they can draw from. Over time, you'll have dozens of ideas to
+  draw from.}
+
+\paragraph{Write early, Write often} You should be writing 500 words
+every day, or at least three or four times per week. The research
+shows that scholars who write for short periods more often produce
+more work, more frequently than those who write for longer periods in
+blocks.\footnote{Paul J. Silva, \textit{How to write a lot.}} One
+  reason this works is that it trains yourself to overcome writer's
+  block and anxiety about getting started.\marginnote{Steven
+    Pressfield calls this ``killing the resistance.''}
+
+\paragraph{Organize efficiently}
+
+I use a database program called \textit{DevonThink} which is best
+described as much more advanced version of Evernote. It has an
+indexing feature and built-in AI that can find related notes. Writing
+notes in plain text with a file name that begins with \texttt{YYYYMMDD
+  -- title} will help you find your notes faster whether you use a
+program like Evernote, DevonThink, or manual
+searching.\marginnote{Think of your notes as digital versions of index
+  cards. cf. Umberto Eco, \textit{How to Write a Thesis}}.
+
+\paragraph{Outsource your time-management}
+
+Using a task management system with the concepts outlined above is, I
+believe, the key hurdle to getting work out the
+door.\footnote{Although unrelated to task management apps, Seth
+  Godin's talk on ``the lizard brain'' (google it) makes a similar
+  point about product shipment for apps.} I've been using
+\textit{OmniFocus}, which is a Mac-only product. The key feature is
+that it has companion apps for iOS which lets me stay on top of my
+tasks even when I don't have my computer at hand. There are other
+apps of course. If you have one, keep using it until it doesn't work
+for you. But you could easily do this with a notepad, calendar, and a
+pencil.  
 
 
+\nocite{*}
+
+% \printbibliography[title=Futher Reading]
+\renewcommand{\bibname}{Further Reading} 
+\bibliography{Proj_MGT}
+\bibliographystyle{plainnat}
 
 \end{document}
