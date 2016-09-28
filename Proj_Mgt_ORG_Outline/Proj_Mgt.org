@@ -1,0 +1,125 @@
+#+startup: indent
+#+options: toc:nil H:2 num:5
+#+author: Luke M Perez
+#+date: \today
+#+title: Project Management for Grad Students: a brief guide
+
+* Introduction
+What does writing a paper share in common with cooking and war?
+Answer: each has an pre-visualized end-state that requires multiple,
+independent dependencies, each with their own time-lines.
+
+** Open loops and anxiety
+A good project management system is mostly about managing the anxiety
+about open loops in your mind. \sidenote{David Allen, GTD}
+** Process over Apps
+Over the years I've used a variety of task management applications and
+"systems" to greater and lesser degrees of failure and success. I'll
+keep my remarks platform and application agnostic, offering comments
+on what I use at the end.
+** Advanced Common sense
+Most of what I will cover is best described as "advanced common
+sense". I hope to say nothing you've not already heard before but
+perhaps in a new and interesting way.
+* The process
+** Reverse (backward) planning. 
+*** Dependency driven
+*** Deadline driven
+*** Context driven
+** Projects, Tasks, Contexts
+*** GTD crash course
+*** A sample project
+1. Building a house
+2. Writing a paper
+* The Apps
+** Currently using
+1. A journal and good pen
+2. Emacs
+3. DevonThink
+4. OmniFocus
+5. NvALT
+6. markdown+pandoc
+** Previously used
+1. Sublime Text
+2. Scrivener
+3. Pages/Sente
+4. Mellel
+** Shoulda, Coulda, Woulda
+1. Mendeley
+2. Index Cards
+3. TexPad
+4. ShareLaTeX
+
+
+
+
+* The problem
+** Time and attention
+*** Finite Resources
+*** Infinite demands
+** For example
+1. Think about the raw numbers of a work day
+   1. 3 hours of seminar, 1--2 hours of grading or TA class, reading
+      ungodly amounts of literature for class, stats problem sets, etc.
+   2. An hour for the gym, lunch and coffee breaks, commute time
+      to/from campus.
+   3. Spending time with Significant Other, calling home, Netflix and chill
+2. Where is the the time to get things done?
+   1. Again, we're back to managing the anxiety
+   2. And if we've captured our stuff adequately, we'll know where to
+      start. 
+** Projects, is and ought 
+*** How it is, forwardly linear 
+ 
+pick a topic → find some articles → read about it → get some data →
+since the deadline isn't for a while, tinker with the data, maybe read
+some more and ... → Whollyshit it's due tomorrow write like crazy
+
+*** A better way, reverse dependencies
+
+Write up theory/litt review section ← Data analysis ← Write data
+section ← complete  draft two weeks prior to deadline ← Reverse Outline ← Revise ← Proof read ← Deadline
+
+* A GTD Crash Course
+** Projects, Tasks, Contexts
+*** Projects vs. Tasks
+1. A task is any single action
+   1. e.g., email adviser about grading for TA class
+2. A project is any objective that requires two or more tasks to complete
+   1. e.g., Attend office hours for adviser
+      1. Figure out when his or her office hours are this semester
+      2. Create agenda
+      3. email agenda
+      4. Review agenda and prep for discussion
+*** Tasks vs Contexts
+1. Every task should be long to a project and context
+2. A context is the thing that must be present for you to accomplish
+   the task
+   1. e.g., You're telephone to make a phone call
+   2. Your laptop to write a paper
+   3. Amazon
+   4. Grocery store
+3. Sometimes contexts can be things other than physical objects
+   1. Make a context for each major faculty member you interact with regularly
+   2. Time of day or energy level (e.g., morning vs evening writers)
+** The Point of all this
+1. Break down as much as you can into tasks and projects.
+2. Review those regularly, a quick morning review and a longer weekly review
+3. It takes time before your mind lets go of the anxiety so be patient
+4. In fact, start small with a simple, straight forward system, on a
+   handful of the most important things you don't want to get behind
+   on; then start to include more things
+* Inbox Zero
+** GTD is about planning. What about execution? 
+
+** Five actions of Inbox Zero (Merlin Mann)
+1. Delete (or archive)
+2. Delegate
+3. Respond
+4. Defer
+5. Do
+* Putting it together
+* Some applications
+DevonThink (database)
+OmniFocus (tasks)
+NvAlt (notes and capture)
