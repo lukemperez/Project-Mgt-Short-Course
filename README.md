@@ -1,15 +1,15 @@
---- 
-title: 'Close the loops: project management for graduate writers'
-author: Luke M Perez
-email: lukemperez@utexas.edu 
-----
+# Close the loops: project management for graduate writers 
 
-# Introduction 
+**author:** Luke M Perez
+**email:** lukemperez@utexas.edu 
+
+
+## Introduction 
 A short course taught at the Department of Government at the University of Texas at Austin, "Project management from idea to publication" on 30 September 2016. 
 
 Please see the handout for a summary of the main points. 
 
-# Relevant links and readings 
+## Relevant links and readings 
 
 Allen, David. 2015. [*Getting Things Done*](https://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity-ebook/dp/B00KWG9M2E/ref=dp_kinw_strp_1)
 
