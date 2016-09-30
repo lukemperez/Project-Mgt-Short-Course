@@ -1,6 +1,6 @@
 # Close the loops: project management for graduate writers 
 
-**author:** Luke M Perez
+**author:** Luke M Perez  
 **email:** lukemperez@utexas.edu 
 
 
