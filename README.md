@@ -1,10 +1,8 @@
 ---
-title: Close the loops: project management for graduate writers
+title: 'Close the loops: project management for graduate writers'
 author: Luke M Perez
 email: lukemperez@utexas.edu
-date: 2016-09-30
---- 
-
+----
 
 # Introduction 
 A short course taught at the Department of Government at the University of Texas at Austin, "Project management from idea to publication" on 30 September 2016. 
