@@ -2,7 +2,6 @@
 title: Close the loops: project management for graduate writers
 author: Luke M Perez
 email: lukemperez@utexas.edu
-website: lukemperez.com
 date: 2016-09-30
 --- 
 
